@@ -127,7 +127,7 @@ export default {
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.95)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
     url("../assets/streetlights.jpg");
   background-size: cover;
   padding-top: 200px;

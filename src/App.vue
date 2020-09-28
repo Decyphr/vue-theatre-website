@@ -24,6 +24,9 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
 
+$brand-red: #f71a2c;
+$brand-black: #000;
+
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +35,11 @@ export default {
   &:focus {
     outline: none;
   }
+}
+
+::selection {
+  background: $brand-red;
+  color: $brand-black;
 }
 
 body {
@@ -64,7 +72,7 @@ h2 {
 }
 
 h4 {
-  color: #f71a2c;
+  color: $brand-red;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -75,9 +83,9 @@ section {
 }
 
 button {
-  padding: 16px 32px;
-  border: 1px solid #f71a2c;
-  border-radius: 4px;
+  padding: 16px 48px;
+  border: 1px solid $brand-red;
+  border-radius: 2px;
   background: transparent;
   color: #fff;
   text-transform: uppercase;
@@ -88,7 +96,7 @@ button {
   transition: all 200ms ease-in-out;
 
   &:hover {
-    background: #f71a2c;
+    background: $brand-red;
   }
 
   &:active {
@@ -97,7 +105,7 @@ button {
 }
 
 .btn-fill {
-  background: #f71a2c;
+  background: $brand-red;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -113,6 +121,17 @@ button {
 
 .btn-small {
   padding: 8px 16px;
+  font-size: 0.7rem;
+}
+
+.btn-grey {
+  background: #1f1f1f;
+  border: 1px solid #1f1f1f;
+
+  &:hover {
+    background: #3f3f3f;
+    border: 1px solid #3f3f3f;
+  }
 }
 
 .container {
@@ -130,7 +149,7 @@ button {
 
 // Animations
 .fade-in {
-  animation: fadeIn 0.7s linear;
+  animation: fadeIn 1.2s linear;
 }
 
 @keyframes fadeIn {
